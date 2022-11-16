@@ -1,29 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 header{
+    margin-top: 100px;
     background-color: rgb(26, 188, 156);
 }
-h1{
+header h1{
     color:white;
     text-transform: uppercase;
     font-size: 64px !important;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
-p{
+header p{
     color:white;
     font-size: 24px;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     padding-bottom: 100px;
 }
-.star{
+header .star{
     font-size: 32px !important;
     color:#fff;
     margin: 0px 5px;
 }
-.divider-custom-line{
+header .divider-custom-line{
     content: '';
     background-color: #fff;
     width:100%;
@@ -31,7 +32,7 @@ p{
     height: 0.25rem;
     margin-top: 15px;
 }
-.divider{
+header .divider{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,4 +46,47 @@ img{
     margin: auto;
     padding-top: 100px;
     padding-bottom: 40px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width:576px) {
+    header{
+        margin-top: 80px;
+    }
+    header h1{
+        font-size: 28px !important;
+    }
+    header p{
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width:767px) {
+    header{
+        margin-top: 80px;
+    }
+    header h1{
+        font-size: 36px !important;
+    }
+    header p{
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width:991px) {
+    header{
+        margin-top: 80px;
+    }
+    header h1{
+        font-size: 42px !important;
+    }
+    header p{
+        font-size: 26px;
+        padding-bottom: 50px;
+    }
 }

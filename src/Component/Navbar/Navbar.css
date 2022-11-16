@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 body{
     height: 1000px;
 }
@@ -12,6 +13,11 @@ body{
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    position: fixed !important;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index:5;
 }
 .navbar-nav .nav-link:hover{
     color:rgb(26, 188, 156) !important;
@@ -30,4 +36,16 @@ body{
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width:400px) {
+    .navbar-brand{
+        font-size: 18px !important;
+    }
+}
+@media screen and (min-width: 400px) and (max-width:576px) {
+    .navbar-brand{
+        font-size: 20px !important;
+    }
 }
